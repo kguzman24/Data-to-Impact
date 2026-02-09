@@ -1,0 +1,13 @@
+#Data Center Transparency & Accountability Framework
+
+#Core data manipulation
+pandas>=2.0.0
+numpy>=1.24.0
+
+#Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+plotly>=5.14.0
+
+# Utilities
+pathlib2>=2.3.7
