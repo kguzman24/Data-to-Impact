@@ -287,21 +287,13 @@ plt.close()
 
 
 # PLOT 5: Tax Exemption Value vs. Disclosure Quality
-print("\nCreating Plot 5: Tax Exemption vs. Transparency...")
-
 def calculate_disclosure_score(row):
     score = 0
-    max_score = 7
+    max_score = 4
     
     if row['annual water consumption (gallons)'] not in ['-', '', None]:
         score += 1
     if row['daily water consumption (gallons)'] not in ['-', '', None]:
-        score += 1
-    if row['nox tpy'] not in ['-', '', None]:
-        score += 1
-    if row['pm2.5 tpy'] not in ['-', '', None]:
-        score += 1
-    if row['co2e tpy'] not in ['-', '', None]:
         score += 1
     if row['estimate power consumption in kw/hr (calculated 50%)'] not in ['-', '', None]:
         score += 1
